@@ -1,0 +1,89 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-05T23:10:22.856Z",
+        "line": 4,
+        "name": "Login functionality under different roles verification",
+        "description": "",
+        "id": "login-feature;login-functionality-under-different-roles-verification",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7103000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Users login with valid credentials",
+            "match": {
+              "location": "com.nextbasecrm.step_definitions.Login_StepDefinitions.users_login_with_valid_credentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Users cannot login with invalid credentials",
+            "match": {
+              "location": "com.nextbasecrm.step_definitions.Login_StepDefinitions.users_cannot_login_with_invalid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Users can check \"Remember me on this computer\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Remember me on this computer\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.nextbasecrm.step_definitions.Login_StepDefinitions.users_can_check_option(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Users access to \"FORGOT YOUR PASSWORD?\" link page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FORGOT YOUR PASSWORD?\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.nextbasecrm.step_definitions.Login_StepDefinitions.users_access_to_link_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Login feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
